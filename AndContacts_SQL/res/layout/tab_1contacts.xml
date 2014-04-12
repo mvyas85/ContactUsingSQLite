@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contactsLayout" >
+
+ <TextView android:id="@+id/TitleView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Contact" 
+	    android:textSize="20sp" 
+	    android:textStyle="bold" 
+	    android:gravity="center">
+   </TextView>
+
+<TableLayout 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:background="#660033">
+    <TableRow> 
+        <TextView 
+            android:text="Name:"
+            android:width ="150px"
+            />
+        <EditText 
+            android:id="@+id/txtname" 
+            android:width="170px" />       
+    </TableRow> 
+     
+    <TableRow>
+        <TextView 
+            android:text="Sex:"
+            />
+
+        <RadioGroup
+            android:id="@+id/rbtn_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+ 			<RadioButton
+ 			    android:id="@+id/male"
+ 			    android:checked="false"
+ 			    android:text="M" />
+
+ 			<RadioButton
+ 			    android:id="@+id/female"
+ 			    android:checked="false"
+ 			    android:text="F" />
+
+ 		</RadioGroup>
+
+    </TableRow>
+    
+    
+    <TableRow>
+        <TextView 
+            android:text="Phone:"
+            />
+        <EditText 
+            android:id="@+id/txtphone" 
+            android:password="false" 
+            />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:text="Email:"
+            />
+        <EditText 
+            android:id="@+id/txtemail" 
+            android:password="false" 
+            />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:text="Postal Address:"
+            />
+        <EditText 
+            android:id="@+id/txtpostaladdress" 
+            android:password="false" 
+            />
+    </TableRow>
+        
+    <TableRow>
+        <TextView />
+        <TextView />
+    </TableRow>
+     
+    <TableRow>
+        <Button 
+            android:id="@+id/buttonsave" 
+            android:text="Save" 
+            android:textStyle="bold" />
+
+    	<Button
+    	    android:id="@+id/buttoncancel"
+    	    android:text="Send to Friends"
+    	    android:textStyle="bold" />
+
+    </TableRow>
+    
+    </TableLayout> 
+
+
+
+
+
+
+
+</LinearLayout>

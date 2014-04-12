@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Index"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_searchbox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <Button
+        android:id="@+id/btn_showall"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:text="Show All Contacts" />
+
+    <Button
+        android:id="@+id/btn_showbyid"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:text="Search Contact By Name" />
+    
+    <ListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:dividerHeight="0.1dp"
+        android:divider="#0000CC"
+        >
+    </ListView>
+
+</LinearLayout>
